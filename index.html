@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WhatsApp</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Geostar&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap");
+
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url("https://cdn.wallpapersafari.com/1/80/8DYndB.png");
+        font-family: Roboto, sans-serif;
+      }
+
+      div {
+        background-color: #daf7c1;
+        width: 320px;
+        margin: 8px;
+        padding: 8px 18px;
+        border-radius: 14px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      div:hover {
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="mandazap(this)">
+      <p>Bom dia!</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Tudo bem?</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Preciso falar com você.</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Pode me ligar?</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Onde você está?</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Estou atrasado!</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>O que houve?</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <div onclick="mandazap(this)">
+      <p>Pode me chamar?</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg"
+        alt=""
+      />
+    </div>
+
+    <script>
+      function mandazap(elemento) {
+        let texto = elemento.firstElementChild.innerText;
+        let numero = prompt("Qual é o número?");
+        let zaplink = `https://web.whatsapp.com/send?phone=55${numero}&text=${texto}`;
+        window.open(zaplink);
+      }
+    </script>
+  </body>
+</html>
