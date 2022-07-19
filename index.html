@@ -4,38 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
     <title>WhatsApp</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Geostar&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap");
-
-      body {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-image: url("https://cdn.wallpapersafari.com/1/80/8DYndB.png");
-        font-family: Roboto, sans-serif;
-      }
-
-      div {
-        background-color: #daf7c1;
-        width: 320px;
-        margin: 8px;
-        padding: 8px 18px;
-        border-radius: 14px;
-        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      div:hover {
-        box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
-        cursor: pointer;
-      }
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    </style>
+    
   </head>
   <body>
     <div onclick="mandazap(this)">
@@ -102,13 +73,7 @@
       />
     </div>
 
-    <script>
-      function mandazap(elemento) {
-        let texto = elemento.firstElementChild.innerText;
-        let numero = prompt("Qual é o número?");
-        let zaplink = `https://web.whatsapp.com/send?phone=55${numero}&text=${texto}`;
-        window.open(zaplink);
-      }
-    </script>
+    <script src="index.js"></script>
+
   </body>
 </html>
